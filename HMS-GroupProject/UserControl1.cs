@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace HMS_GroupProject
 {
-    public partial class Booking : Form
+    public partial class UserControl1 : UserControl
     {
-        public Booking()
+        public UserControl1()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
