@@ -1,0 +1,19 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.swp
+.vs/
+
+# Build results
+bin/
+obj/
+
+# Uncomment if you have a publish profile
+# /publish/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
