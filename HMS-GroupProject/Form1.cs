@@ -18,10 +18,7 @@ namespace HMS_GroupProject
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -38,10 +35,14 @@ namespace HMS_GroupProject
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
-
+            Room roomForm = new Room();
+            this.Hide();
+            roomForm.Show();
+            roomForm.FormClosed += (s, args) => this.Show();
         }
+
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -51,6 +52,36 @@ namespace HMS_GroupProject
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Guest guestForm = new Guest();
+            this.Hide();
+            guestForm.Show();
+            guestForm.FormClosed += (s, args) => this.Show();
+        }
+
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Form1 homeForm = new Form1();
+            this.Hide();
+            homeForm.Show();
+            homeForm.FormClosed += (s, args) => this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Booking bookingForm = new Booking();
+            this.Hide(); 
+            bookingForm.Show(); 
+            bookingForm.FormClosed += (s, args) => this.Show();
         }
     }
 }

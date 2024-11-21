@@ -41,6 +41,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GuestName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -50,11 +55,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.GuestName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CheckOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -160,6 +160,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Create new booking";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // monthCalendar1
             // 
@@ -185,6 +186,36 @@
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // GuestName
+            // 
+            this.GuestName.HeaderText = "Name";
+            this.GuestName.Name = "GuestName";
+            this.GuestName.ReadOnly = true;
+            // 
+            // RoomNumber
+            // 
+            this.RoomNumber.HeaderText = "Room Number";
+            this.RoomNumber.Name = "RoomNumber";
+            this.RoomNumber.ReadOnly = true;
+            // 
+            // Room
+            // 
+            this.Room.HeaderText = "Room";
+            this.Room.Name = "Room";
+            this.Room.ReadOnly = true;
+            // 
+            // Duration
+            // 
+            this.Duration.HeaderText = "Duration";
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            // 
+            // CheckOut
+            // 
+            this.CheckOut.HeaderText = "Check Out";
+            this.CheckOut.Name = "CheckOut";
+            this.CheckOut.ReadOnly = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label10);
@@ -205,6 +236,7 @@
             this.label10.Size = new System.Drawing.Size(35, 13);
             this.label10.TabIndex = 3;
             this.label10.Text = "Home";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -214,6 +246,7 @@
             this.label9.Size = new System.Drawing.Size(46, 13);
             this.label9.TabIndex = 2;
             this.label9.Text = "Booking";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -233,6 +266,7 @@
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "Room";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label11
             // 
@@ -270,36 +304,6 @@
             this.label14.Size = new System.Drawing.Size(19, 13);
             this.label14.TabIndex = 12;
             this.label14.Text = "28";
-            // 
-            // GuestName
-            // 
-            this.GuestName.HeaderText = "Name";
-            this.GuestName.Name = "GuestName";
-            this.GuestName.ReadOnly = true;
-            // 
-            // RoomNumber
-            // 
-            this.RoomNumber.HeaderText = "Room Number";
-            this.RoomNumber.Name = "RoomNumber";
-            this.RoomNumber.ReadOnly = true;
-            // 
-            // Room
-            // 
-            this.Room.HeaderText = "Room";
-            this.Room.Name = "Room";
-            this.Room.ReadOnly = true;
-            // 
-            // Duration
-            // 
-            this.Duration.HeaderText = "Duration";
-            this.Duration.Name = "Duration";
-            this.Duration.ReadOnly = true;
-            // 
-            // CheckOut
-            // 
-            this.CheckOut.HeaderText = "Check Out";
-            this.CheckOut.Name = "CheckOut";
-            this.CheckOut.ReadOnly = true;
             // 
             // Form1
             // 
