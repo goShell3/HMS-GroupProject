@@ -67,6 +67,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,6 +77,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(1, 1075);
@@ -466,6 +468,16 @@
             this.label13.TabIndex = 36;
             this.label13.Text = "Room Price";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1077, 44);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(123, 70);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "View Room";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -560,5 +572,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }

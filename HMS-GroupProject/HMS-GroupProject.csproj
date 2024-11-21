@@ -93,6 +93,12 @@
     <Compile Include="Room.Designer.cs">
       <DependentUpon>Room.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoomView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomView.Designer.cs">
+      <DependentUpon>RoomView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomView.resx">
+      <DependentUpon>RoomView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

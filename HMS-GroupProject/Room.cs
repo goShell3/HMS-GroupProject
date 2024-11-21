@@ -57,6 +57,12 @@ namespace HMS_GroupProject
 
         }
 
-
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RoomView roomview = new RoomView();
+            this.Hide();
+            roomview.Show();
+            roomview.FormClosed += (s, args) => this.Show();
+        }
     }
 }
