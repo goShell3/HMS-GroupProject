@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace HMS_GroupProject
 {
-    public partial class UserControl2 : UserControl
+    public partial class MainControl : UserControl
     {
-        public UserControl2()
+        public MainControl()
         {
             InitializeComponent();
+            homePage homeForm = new homePage();
+            homeForm.TopLevel = false;
+            homeForm.FormBorderStyle = FormBorderStyle.None;
+            homeForm.Dock = DockStyle.Fill;
+            contentpanel.Controls.Add(homeForm);
+            homeForm.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -43,6 +49,11 @@ namespace HMS_GroupProject
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
         {
 
         }

@@ -70,13 +70,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(917, 37);
+            this.panel1.Size = new System.Drawing.Size(685, 37);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 4);
             this.label6.MaximumSize = new System.Drawing.Size(500, 220);
             this.label6.Name = "label6";
@@ -89,7 +89,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(196, 8);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.Size = new System.Drawing.Size(204, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Search here...";
             // 
@@ -182,6 +182,7 @@
             this.CheckOut});
             this.dataGridView1.Location = new System.Drawing.Point(196, 322);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.Size = new System.Drawing.Size(550, 162);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -189,30 +190,35 @@
             // GuestName
             // 
             this.GuestName.HeaderText = "Name";
+            this.GuestName.MinimumWidth = 10;
             this.GuestName.Name = "GuestName";
             this.GuestName.ReadOnly = true;
             // 
             // RoomNumber
             // 
             this.RoomNumber.HeaderText = "Room Number";
+            this.RoomNumber.MinimumWidth = 10;
             this.RoomNumber.Name = "RoomNumber";
             this.RoomNumber.ReadOnly = true;
             // 
             // Room
             // 
             this.Room.HeaderText = "Room";
+            this.Room.MinimumWidth = 10;
             this.Room.Name = "Room";
             this.Room.ReadOnly = true;
             // 
             // Duration
             // 
             this.Duration.HeaderText = "Duration";
+            this.Duration.MinimumWidth = 10;
             this.Duration.Name = "Duration";
             this.Duration.ReadOnly = true;
             // 
             // CheckOut
             // 
             this.CheckOut.HeaderText = "Check Out";
+            this.CheckOut.MinimumWidth = 10;
             this.CheckOut.Name = "CheckOut";
             this.CheckOut.ReadOnly = true;
             // 
@@ -225,7 +231,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(180, 466);
+            this.panel2.Size = new System.Drawing.Size(180, 352);
             this.panel2.TabIndex = 0;
             // 
             // label10
@@ -243,9 +249,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(12, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 2;
-            this.label9.Text = "Booking";
+            this.label9.Text = "Booking List";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
@@ -309,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(917, 503);
+            this.ClientSize = new System.Drawing.Size(685, 389);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);

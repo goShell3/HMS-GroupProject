@@ -1,6 +1,6 @@
 ﻿namespace HMS_GroupProject
 {
-    partial class UserControl2
+    partial class MainControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.contentpanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // UserControl2
+            // contentpanel
+            // 
+            this.contentpanel.Location = new System.Drawing.Point(95, 79);
+            this.contentpanel.Name = "contentpanel";
+            this.contentpanel.Size = new System.Drawing.Size(200, 100);
+            this.contentpanel.TabIndex = 0;
+            // 
+            // MainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(645, 38);
+            this.AutoScroll = true;
+            this.BackgroundImage = global::HMS_GroupProject.Properties.Resources.mainCont;
+            this.Controls.Add(this.contentpanel);
+            this.Name = "MainControl";
+            this.Size = new System.Drawing.Size(936, 474);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel contentpanel;
     }
 }
