@@ -118,9 +118,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1371, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(1437, 94);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 268);
+            this.pictureBox1.Size = new System.Drawing.Size(347, 268);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -130,9 +130,9 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(911, 99);
+            this.pictureBox2.Location = new System.Drawing.Point(977, 94);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(326, 268);
+            this.pictureBox2.Size = new System.Drawing.Size(349, 268);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -143,9 +143,9 @@
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.SizeNESW;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(480, 99);
+            this.pictureBox3.Location = new System.Drawing.Point(546, 94);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(295, 268);
+            this.pictureBox3.Size = new System.Drawing.Size(327, 268);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -156,7 +156,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(33, 99);
+            this.pictureBox4.Location = new System.Drawing.Point(99, 94);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(356, 268);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -445,20 +445,23 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1515, 44);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(393, 87);
+            this.button1.Size = new System.Drawing.Size(393, 70);
             this.button1.TabIndex = 37;
             this.button1.Text = "Save Cahanges";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Font = new System.Drawing.Font("Sans Serif Collection", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1210, 44);
+            this.button2.Location = new System.Drawing.Point(1265, 44);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(222, 87);
+            this.button2.Size = new System.Drawing.Size(196, 70);
             this.button2.TabIndex = 38;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
