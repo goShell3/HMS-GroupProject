@@ -32,10 +32,11 @@
             // 
             // UserControl2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(645, 38);
+            this.Size = new System.Drawing.Size(1463, 555);
             this.ResumeLayout(false);
 
         }
