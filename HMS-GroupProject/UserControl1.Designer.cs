@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::HMS_GroupProject.Properties.Resources.homepagePic1;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
@@ -58,6 +59,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1075, 37);
             this.panel1.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(-2, 0);
+            this.label7.MaximumSize = new System.Drawing.Size(500, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 28);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "HMS";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
@@ -88,6 +100,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::HMS_GroupProject.Properties.Resources.homepagePic1;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -156,21 +169,11 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "New Booking";
             // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(-2, 0);
-            this.label7.MaximumSize = new System.Drawing.Size(500, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 28);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "HMS";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::HMS_GroupProject.Properties.Resources.homepagePic1;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
