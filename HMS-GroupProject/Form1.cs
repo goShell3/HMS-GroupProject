@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,32 @@ namespace HMS_GroupProject
 {
     public partial class Form1 : Form
     {
+        private SqlConnection connection;
+        //private string connectionString = "Data Source=DESKTOP-A3UB2QO\\MSSQLSERVER2022;Initial Catalog=HotelManagementDB;Integrated Security=True;Encrypt=False;";
         public Form1()
         {
             InitializeComponent();
+            //InitializeDatabase();
+            //LoginPage loginPage = new LoginPage();
+            //this.Controls.Add(loginPage);
+            //loginPage.Visible = true;
+            //loginPage.Dock = DockStyle.Fill;
         }
 
-       
+        //private void InitializeDatabase()
+        //{
+        //    try
+        //    {
+        //        connection = new SqlConnection(connectionString);
+        //        connection.Open();
+        //        MessageBox.Show("Connected to Database!");
+                
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Database Connection Failed: " + ex.Message);
+        //    }
+        //}
 
         private void label1_Click(object sender, EventArgs e)
         {
