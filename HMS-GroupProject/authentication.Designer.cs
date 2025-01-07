@@ -11,14 +11,14 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && (components != null))
+        //    {
+        //        components.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
         #region Windows Form Designer generated code
 
@@ -33,7 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            //this.SuspendLayout();
             // 
             // button1
             // 
@@ -79,18 +79,18 @@
             // 
             // authentication
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(380, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Name = "authentication";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "authentication";
+            //this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            //this.BackColor = System.Drawing.Color.White;
+            //this.ClientSize = new System.Drawing.Size(380, 450);
+            //this.Controls.Add(this.panel1);
+            //this.Controls.Add(this.button1);
+            //this.Name = "authentication";
+            //this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            //this.Text = "authentication";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.ResumeLayout(false);
+            //this.ResumeLayout(false);
 
         }
 

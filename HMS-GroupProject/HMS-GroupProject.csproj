@@ -61,7 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminView.Designer.cs">
+      <DependentUpon>adminView.cs</DependentUpon>
+    </Compile>
     <Compile Include="authentication.Designer.cs" />
+    <Compile Include="LoginPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="user control\BookingListUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     <Compile Include="user control\RoomUserControl.Designer.cs">
       <DependentUpon>RoomUserControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminView.resx">
+      <DependentUpon>adminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="user control\BookingListUserControl.resx">
       <DependentUpon>BookingListUserControl.cs</DependentUpon>
     </EmbeddedResource>

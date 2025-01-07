@@ -17,10 +17,10 @@ namespace HMS_GroupProject
 
 
         private Form1 mainForm;
-        public LoginPage()
+        public LoginPage(Form1 form)
         {
             InitializeComponent();
-           // mainForm = form;
+            mainForm = form;
         }
         private string connectionString = "Data Source=DESKTOP-A3UB2QO\\MSSQLSERVER2022;Initial Catalog=HotelManagementDB;Integrated Security=True;Encrypt=False;";
 
@@ -86,7 +86,7 @@ namespace HMS_GroupProject
                             {
                                 case "Guest":
                                     MessageBox.Show("Welcome Guest! Redirecting to Guest Page...", "Login Successful");
-                                   
+                                    
                                     break;
                                 case "Employee":
                                     MessageBox.Show("Welcome Employee! Redirecting to Employee Page...", "Login Successful");
@@ -96,6 +96,7 @@ namespace HMS_GroupProject
                                 case "Admin":
                                     MessageBox.Show("Welcome Admin! Redirecting to Admin Page...", "Login Successful");
                                     //mainForm.ShowDashboard();
+                                    mainForm.adminView();
                                     // Open Admin page here
                                     break;
                                 default:
