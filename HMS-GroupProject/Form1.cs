@@ -13,9 +13,13 @@ namespace HMS_GroupProject
 {
     public partial class Form1 : Form
     {
+        GuestUserControl guest = new GuestUserControl();
+        BookingListUserControl booking = new BookingListUserControl();
+
         public Form1()
         {
             InitializeComponent();
+            //currentForm = null; // Initially, no form is displayed
         }
 
        
@@ -56,15 +60,20 @@ namespace HMS_GroupProject
 
         private void label9_Click(object sender, EventArgs e)
         {
-            
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(booking);
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
-            Guest guestForm = new Guest();
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(guest);
+           /* Guest guestForm = new Guest();
             this.Hide();
             guestForm.Show();
-            guestForm.FormClosed += (s, args) => this.Show();
+            guestForm.FormClosed += (s, args) => this.Show();*/
+
+
         }
 
 
@@ -82,6 +91,31 @@ namespace HMS_GroupProject
             this.Hide(); 
             bookingForm.Show(); 
             bookingForm.FormClosed += (s, args) => this.Show();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
         }
     }
 }
