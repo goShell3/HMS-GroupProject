@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,9 +14,13 @@ namespace HMS_GroupProject
 {
     public partial class LoginPage : UserControl
     {
-        public LoginPage()
+
+
+        private Form1 mainForm;
+        public LoginPage(Form1 form)
         {
             InitializeComponent();
+            mainForm = form;
         }
         private string connectionString = "Data Source=DESKTOP-A3UB2QO\\MSSQLSERVER2022;Initial Catalog=HotelManagementDB;Integrated Security=True;Encrypt=False;";
 
@@ -81,14 +86,16 @@ namespace HMS_GroupProject
                             {
                                 case "Guest":
                                     MessageBox.Show("Welcome Guest! Redirecting to Guest Page...", "Login Successful");
-                                    // Open Guest page here
+                                   
                                     break;
                                 case "Employee":
                                     MessageBox.Show("Welcome Employee! Redirecting to Employee Page...", "Login Successful");
+                                    mainForm.ShowDashboard();
                                     // Open Employee page here
                                     break;
                                 case "Admin":
                                     MessageBox.Show("Welcome Admin! Redirecting to Admin Page...", "Login Successful");
+                                    mainForm.ShowDashboard();
                                     // Open Admin page here
                                     break;
                                 default:
