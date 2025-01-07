@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_GroupProject.user_control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +14,16 @@ namespace HMS_GroupProject
 {
     public partial class Form1 : Form
     {
-        GuestUserControl guest = new GuestUserControl();
-        BookingListUserControl booking = new BookingListUserControl();
+        GuestUserControl ucguest = new GuestUserControl();
+        BookingListUserControl ucbooking = new BookingListUserControl();
+        HomeUserControl uchome = new HomeUserControl();
+        RoomUserControl ucroom = new RoomUserControl();
+
 
         public Form1()
         {
             InitializeComponent();
-            //currentForm = null; // Initially, no form is displayed
+            //c = null; // Initially, no form is displayed
         }
 
        
@@ -31,6 +35,18 @@ namespace HMS_GroupProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            using (LoginPage loginForm = new LoginPage())
+            {
+                if (loginForm.ShowDialog() != DialogResult.OK)
+                {
+                    // If login is not successful, close the application
+                    Application.Exit();
+                    return;
+                }
+            }
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(uchome);
+            uchome.Dock = DockStyle.Fill;
 
         }
 
@@ -39,83 +55,33 @@ namespace HMS_GroupProject
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-            Room roomForm = new Room();
-            this.Hide();
-            roomForm.Show();
-            roomForm.FormClosed += (s, args) => this.Show();
-        }
 
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
+        private void homeButton_Click(object sender, EventArgs e)
         {
             panelMain.Controls.Clear();
-            panelMain.Controls.Add(booking);
+            panelMain.Controls.Add(uchome);
+            uchome.Dock = DockStyle.Fill;
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             panelMain.Controls.Clear();
-            panelMain.Controls.Add(guest);
-           /* Guest guestForm = new Guest();
-            this.Hide();
-            guestForm.Show();
-            guestForm.FormClosed += (s, args) => this.Show();*/
-
-
+            panelMain.Controls.Add(ucroom);
+            ucroom.Dock = DockStyle.Fill;
         }
 
-
-        private void label10_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form1 homeForm = new Form1();
-            this.Hide();
-            homeForm.Show();
-            homeForm.FormClosed += (s, args) => this.Show();
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucguest);
+            ucguest.Dock = DockStyle.Fill;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Booking bookingForm = new Booking();
-            this.Hide(); 
-            bookingForm.Show(); 
-            bookingForm.FormClosed += (s, args) => this.Show();
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucbooking);
+            ucbooking.Dock = DockStyle.Fill;
         }
     }
 }
